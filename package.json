@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/paxeer-bridge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Paxeer Bridge API",
   "author": "Paxeer Bridge <>",
   "types": "dist/index.d.ts",
