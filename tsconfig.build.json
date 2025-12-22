@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "paxeer-bridge/*": ["./dist/src/*"],
-      "paxeer-bridge": ["./dist/src/index.ts"]
+      "@paxeer-network/paxeer-bridge/*": ["./dist/src/*"],
+      "@paxeer-network/paxeer-bridge": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

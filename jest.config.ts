@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^paxeer-bridge$': '<rootDir>/src/index.ts',
-    '^paxeer-bridge/(.*)$': '<rootDir>/src/$1',
+    '^@paxeer-network/paxeer-bridge$': '<rootDir>/src/index.ts',
+    '^@paxeer-network/paxeer-bridge/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

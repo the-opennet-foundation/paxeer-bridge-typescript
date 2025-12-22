@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - paxeer-bridge
+  - '@paxeer-network/paxeer-bridge'

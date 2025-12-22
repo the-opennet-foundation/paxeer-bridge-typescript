@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import PaxeerBridge from 'paxeer-bridge';
+import PaxeerBridge from '@paxeer-network/paxeer-bridge';
 
 const client = new PaxeerBridge({
   walletSignature: 'My Wallet Signature',

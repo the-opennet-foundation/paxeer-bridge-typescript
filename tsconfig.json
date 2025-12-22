@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "paxeer-bridge/*": ["./src/*"],
-      "paxeer-bridge": ["./src/index.ts"]
+      "@paxeer-network/paxeer-bridge/*": ["./src/*"],
+      "@paxeer-network/paxeer-bridge": ["./src/index.ts"]
     },
     "noEmit": true,
 
