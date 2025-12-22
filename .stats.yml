@@ -1,0 +1,4 @@
+configured_endpoints: 16
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/chainflow%2Fpaxeer-bridge-9311640f5efd202c876ed57d14d1b3f4c94d74f6d231edaadab1118b58cc991a.yml
+openapi_spec_hash: c8e647c9ef7e5874638ff6c789bf8005
+config_hash: 2c084f6b6f46ab255588ec4f4a26b883
