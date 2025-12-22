@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'paxeer-bridge/internal/to-file';
-import { toFile } from 'paxeer-bridge/core/uploads';
+import type { ResponseLike } from '@paxeer-network/paxeer-bridge/internal/to-file';
+import { toFile } from '@paxeer-network/paxeer-bridge/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('paxeer-bridge/core/uploads');
+    const uploads = await import('@paxeer-network/paxeer-bridge/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

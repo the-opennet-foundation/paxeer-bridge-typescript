@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^paxeer-bridge(/.*)?',
+              regex: '^@paxeer-network/paxeer-bridge(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
