@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'paxeer-bridge/internal/uploads';
-import { toFile } from 'paxeer-bridge/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@paxeer-network/paxeer-bridge/internal/uploads';
+import { toFile } from '@paxeer-network/paxeer-bridge/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

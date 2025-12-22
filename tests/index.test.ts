@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'paxeer-bridge/core/api-promise';
+import { APIPromise } from '@paxeer-network/paxeer-bridge/core/api-promise';
 
 import util from 'node:util';
-import PaxeerBridge from 'paxeer-bridge';
-import { APIUserAbortError } from 'paxeer-bridge';
+import PaxeerBridge from '@paxeer-network/paxeer-bridge';
+import { APIUserAbortError } from '@paxeer-network/paxeer-bridge';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

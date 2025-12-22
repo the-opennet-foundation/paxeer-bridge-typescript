@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'paxeer-bridge/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from '@paxeer-network/paxeer-bridge/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 
