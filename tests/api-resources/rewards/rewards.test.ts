@@ -8,7 +8,7 @@ const client = new PaxeerBridge({
 });
 
 describe('resource rewards', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveConfig', async () => {
     const responsePromise = client.rewards.retrieveConfig();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource rewards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveDashboard', async () => {
     const responsePromise = client.rewards.retrieveDashboard('0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource rewards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLeaderboard', async () => {
     const responsePromise = client.rewards.retrieveLeaderboard();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource rewards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLeaderboard: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

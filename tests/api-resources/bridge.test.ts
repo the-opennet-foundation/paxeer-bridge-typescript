@@ -8,7 +8,7 @@ const client = new PaxeerBridge({
 });
 
 describe('resource bridge', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('checkHealth', async () => {
     const responsePromise = client.bridge.checkHealth();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirm: only required params', async () => {
     const responsePromise = client.bridge.confirm({
       bridgeId: '550e8400-e29b-41d4-a716-446655440000',
@@ -35,7 +35,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirm: required and optional params', async () => {
     const response = await client.bridge.confirm({
       bridgeId: '550e8400-e29b-41d4-a716-446655440000',
@@ -43,7 +43,7 @@ describe('resource bridge', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('initiate: only required params', async () => {
     const responsePromise = client.bridge.initiate({
       amount: '100',
@@ -61,7 +61,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('initiate: required and optional params', async () => {
     const response = await client.bridge.initiate({
       amount: '100',
@@ -72,7 +72,7 @@ describe('resource bridge', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStats', async () => {
     const responsePromise = client.bridge.retrieveStats();
     const rawResponse = await responsePromise.asResponse();
@@ -84,7 +84,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus', async () => {
     const responsePromise = client.bridge.retrieveStatus('550e8400-e29b-41d4-a716-446655440000');
     const rawResponse = await responsePromise.asResponse();
@@ -96,7 +96,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveUserTransactions', async () => {
     const responsePromise = client.bridge.retrieveUserTransactions(
       '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
@@ -110,7 +110,7 @@ describe('resource bridge', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveUserTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
