@@ -119,7 +119,13 @@ const client = new PaxeerBridge({
 });
 
 // Or, configure per-request:
-await client.bridge.initiate({ amount: '100', fromNetwork: 'ethereum', tokenSymbol: 'USDC', toNetwork: 'base', userAddress: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb' }, {
+await client.bridge.initiate({
+  amount: '100',
+  fromNetwork: 'ethereum',
+  tokenSymbol: 'USDC',
+  toNetwork: 'base',
+  userAddress: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
+}, {
   maxRetries: 5,
 });
 ```
@@ -136,7 +142,13 @@ const client = new PaxeerBridge({
 });
 
 // Override per-request:
-await client.bridge.initiate({ amount: '100', fromNetwork: 'ethereum', tokenSymbol: 'USDC', toNetwork: 'base', userAddress: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb' }, {
+await client.bridge.initiate({
+  amount: '100',
+  fromNetwork: 'ethereum',
+  tokenSymbol: 'USDC',
+  toNetwork: 'base',
+  userAddress: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
+}, {
   timeout: 5 * 1000,
 });
 ```

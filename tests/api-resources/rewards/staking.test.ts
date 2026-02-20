@@ -8,7 +8,7 @@ const client = new PaxeerBridge({
 });
 
 describe('resource staking', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createPosition: only required params', async () => {
     const responsePromise = client.rewards.staking.createPosition({
       amount: '1000',
@@ -24,7 +24,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createPosition: required and optional params', async () => {
     const response = await client.rewards.staking.createPosition({
       amount: '1000',
@@ -34,7 +34,7 @@ describe('resource staking', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePools', async () => {
     const responsePromise = client.rewards.staking.retrievePools();
     const rawResponse = await responsePromise.asResponse();
@@ -46,7 +46,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePools: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -57,7 +57,7 @@ describe('resource staking', () => {
     ).rejects.toThrow(PaxeerBridge.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePositions', async () => {
     const responsePromise = client.rewards.staking.retrievePositions(
       '0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A',
@@ -71,7 +71,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('unstakePosition: only required params', async () => {
     const responsePromise = client.rewards.staking.unstakePosition({
       positionId: 123,
@@ -86,7 +86,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('unstakePosition: required and optional params', async () => {
     const response = await client.rewards.staking.unstakePosition({
       positionId: 123,

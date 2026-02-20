@@ -8,7 +8,7 @@ const client = new PaxeerBridge({
 });
 
 describe('resource referral', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('applyCode: only required params', async () => {
     const responsePromise = client.rewards.referral.applyCode({
       referralCode: 'PAXEER123',
@@ -23,7 +23,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('applyCode: required and optional params', async () => {
     const response = await client.rewards.referral.applyCode({
       referralCode: 'PAXEER123',
@@ -31,7 +31,7 @@ describe('resource referral', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLeaderboard', async () => {
     const responsePromise = client.rewards.referral.retrieveLeaderboard();
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLeaderboard: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -51,7 +51,7 @@ describe('resource referral', () => {
     ).rejects.toThrow(PaxeerBridge.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatistics', async () => {
     const responsePromise = client.rewards.referral.retrieveStatistics(
       '0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A',

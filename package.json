@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/paxeer-bridge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The official TypeScript library for the Paxeer Bridge API",
   "author": "Paxeer Bridge <>",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "type": "commonjs",
   "repository": "github:the-opennet-foundation/paxeer-bridge-typescript",
   "license": "MIT",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.27.0",
   "files": [
     "**/*"
   ],
